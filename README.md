@@ -1,14 +1,14 @@
 
-<div align="center">
-  <h1>Constructa Starter Min</h1>
-  <p><strong>A modern Web App Starter Kit based on Tanstack Starter using React, shadcn/ui and Tailwind CSS 4</strong></p>
+
+  # TanStack/Start Full stack template </h1>
+ ** A modern Web App Starter Kit based on Tanstack Starter using React, shadcn/ui and Tailwind CSS 4****
   
   [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org/)
   [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
   [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 </div>
 
-## ✨ Features
+##  Features
 
 - **[TanStack Start RC1](https://tanstack.com/start)** - Modern full-stack React framework
 - **[shadcn/ui](https://ui.shadcn.com/)** - Beautiful, accessible component library
@@ -21,18 +21,28 @@
 ## 🚀 Quick Start
 
 ### Prerequisites
-- **Node.js** 18+ 
+- **Node.js** Latest LTS version, now required > 22.12 
 - **pnpm** (recommended package manager)
 
 ### Download
 
 ```bash
 # Clone the starter template (replace with your repo)
-npx gitpick git@github.com:instructa/constructa-starter-min.git my-app
+npx gitpick git@github.com:hhao99/tanstack-start-template.git my-app
 cd my-app
 ```
 
 > **Recommended:** This starter uses [gitpick](https://github.com/nrjdalal/gitpick) for easy cloning without `.git` directory, making it perfect for creating new projects from this template.
+
+### NodeJS and package manager
+I recommend using OSX and nix.
+
+1. install nix
+2. (optional) install nix darwin
+3. add support for flake
+4. using home-manager
+5. (optional) with direnv
+
 
 ### Installation
 
@@ -88,9 +98,9 @@ src/
 ### Adding shadcn/ui Components
 ```bash
 # Add new components
-npx shadcn@latest add button
-npx shadcn@latest add card
-npx shadcn@latest add input
+pnpm dlx shadcn@latest add button
+pnpm dlx shadcn@latest add card
+pnpm dlx shadcn@latest add input
 ```
 
 ### Tailwind CSS
@@ -99,7 +109,7 @@ npx shadcn@latest add input
 - Global styles in `src/app/styles/`
 
 ### TypeScript
-- **Path aliases**: `@` resolves to the root `./` directory
+- **Path aliases**: `~` resolves to the root `./` directory
 - **Route files**: Must use `.tsx` extension
 
 ## 🚀 Deployment
