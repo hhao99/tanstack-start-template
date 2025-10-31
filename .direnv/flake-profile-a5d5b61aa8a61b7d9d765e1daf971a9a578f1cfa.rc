@@ -165,7 +165,7 @@ name='nix-shell-env'
 export name
 nativeBuildInputs='/nix/store/qyzkajk5w1cmb9rid9rzvgx7w6bz2dhh-nodejs-22.19.0-dev /nix/store/p31822cx1zkknvw6jg3in2lmm2ldsk7c-corepack-nodejs-22.19.0 /nix/store/vw5l31k048p438j2zr4yjb85l9hwmksn-typescript-5.8.2 /nix/store/dwpbn3vsr2siiyd20cv3miplwi9ywjcc-typescript-language-server-4.3.3'
 export nativeBuildInputs
-out='/Users/hao/repos/js/t3/outputs/out'
+out='/Users/hao/repos/js/t1/outputs/out'
 export out
 outputBin='out'
 outputDev='out'
@@ -196,7 +196,7 @@ preConfigurePhases=' updateAutotoolsGnuConfigScriptsPhase'
 declare -a preFixupHooks=('_moveToShare' '_multioutDocs' '_multioutDevs' )
 preferLocalBuild='1'
 export preferLocalBuild
-prefix='/Users/hao/repos/js/t3/outputs/out'
+prefix='/Users/hao/repos/js/t1/outputs/out'
 declare -a propagatedBuildDepFiles=('propagated-build-build-deps' 'propagated-native-build-inputs' 'propagated-build-target-deps' )
 propagatedBuildInputs=''
 export propagatedBuildInputs

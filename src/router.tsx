@@ -16,7 +16,7 @@ export function getRouter() {
   return routerWithQueryClient(
     createTanStackRouter({
       routeTree,
-      context: { queryClient },
+      context: { queryClient, auth: null },
       defaultPreload: 'intent',
       defaultErrorComponent: DefaultCatchBoundary,
       defaultNotFoundComponent: () => <NotFound />,

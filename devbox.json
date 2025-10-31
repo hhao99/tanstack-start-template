@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "nodejs@22.14.0",
+    "pnpm@latest",
+    "sqlite@latest"
+  ]
+}

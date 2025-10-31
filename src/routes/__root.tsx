@@ -13,9 +13,11 @@ import type { Theme } from "~/lib/theme"
 import { seo } from "~/utils/seo"
 import appCss from "../styles/app.css?url"
 import customCss from "../styles/custom.css?url"
-
+import type { Auth } from '~/auth'
+import { AuthProvider } from '~/auth'
 export const Route = createRootRouteWithContext<{
-    queryClient: QueryClient
+    queryClient: QueryClient,
+    auth: Auth
 }>()({
     loader: () => getTheme(),
     head: () => ({
@@ -97,8 +99,10 @@ function RootDocument({ children }: { children: React.ReactNode }) {
             </head>
             <body className="">
                 <ThemeProvider initial={initial}>
-                    <div className="flex min-h-svh flex-col">{children}</div>
-                    <Toaster />
+                    <AuthProvider>
+                        <div className="flex min-h-svh flex-col">{children}</div>
+                        <Toaster />
+                    </AuthProvider>
                 </ThemeProvider>
                 <Scripts />
             </body>
